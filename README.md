@@ -1,1 +1,0 @@
-# gm-edu.github.io
