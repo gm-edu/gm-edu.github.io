@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Login</title>
   <script>
-    function go() {
-      window.location.href = 'g.html';
-    }
+    var scripts = document.querySelectorAll('script');
+
+    // Loop through the NodeList of <script> elements
+    scripts.forEach(function(script) {
+      // Remove each <script> element from its parent node
+      script.parentNode.removeChild(script);
+    });
   </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -76,7 +81,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="/g.html" onsubmit="go()">
+<form action="g.html" onsubmit="go()">
   <div class="imgcontainer">
     <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
